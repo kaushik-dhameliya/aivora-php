@@ -1,0 +1,417 @@
+{
+    "services": [
+        {
+            "name": "AI saas product",
+            "description": "We build scalable AI-powered SaaS solutions that automate tasks, deliver insights, and boost business performance.",
+            "image": "assets/img/service/img07.jpg",
+            "image2": "assets/img/service/img07.jpg",
+            "image3": "assets/img/service/img07.jpg",
+            "image4": "assets/img/service/img07.jpg"
+        },
+        {
+            "name": "Data and intelligence..",
+            "description": "We turn complex data into clear, actionable insights using AI and advanced analytics—empowering smarter decisions.",
+            "image": "assets/img/service/img08.jpg",
+            "image2": "assets/img/service/img08.jpg",
+            "image3": "assets/img/service/img08.jpg",
+            "image4": "assets/img/service/img08.jpg"
+        },
+        {
+            "name": "AI for E-commerce",
+            "description": "We enhance e-commerce with AI-powered, dynamic pricing, and personalized customer experiences.",
+            "image": "assets/img/service/img09.jpg",
+            "image2": "assets/img/service/img09.jpg",
+            "image3": "assets/img/service/img09.jpg",
+            "image4": "assets/img/service/img09.jpg"
+        },
+        {
+            "name": "AI consulting",
+            "description": "We guide businesses in adopting AI strategies, optimizing processes, and integrating technologies for lasting success.",
+            "image": "assets/img/service/img11.jpg",
+            "image2": "assets/img/service/img11.jpg",
+            "image3": "assets/img/service/img11.jpg",
+            "image4": "assets/img/service/img11.jpg"
+        },
+        {
+            "name": "AI chatbot virtual",
+            "description": "We create intelligent chatbots and virtual assistants that improve customer support and automate interactions 24/7.",
+            "image": "assets/img/service/img11.jpg",
+            "image2": "assets/img/service/img11.jpg",
+            "image3": "assets/img/service/img11.jpg",
+            "image4": "assets/img/service/img11.jpg"
+        },
+        {
+            "name": "AI - marketing",
+            "description": "Use AI to target audiences, personalize campaigns, and analyze data for better engagement and results.",
+            "image": "assets/img/service/img12.jpg",
+            "image2": "assets/img/service/img12.jpg",
+            "image3": "assets/img/service/img12.jpg",
+            "image4": "assets/img/service/img12.jpg"
+        }
+    ],
+    "service_detail": [
+        {
+            "image": "assets/img/service/img14.jpg",
+            "image2": "assets/img/service/img14.jpg",
+            "image3": "assets/img/service/img14.jpg",
+            "image4": "assets/img/service/img14.jpg"
+        },
+        {
+            "image": "assets/img/service/img15.jpg",
+            "image2": "assets/img/service/img15.jpg",
+            "image3": "assets/img/service/img15.jpg",
+            "image4": "assets/img/service/img15.jpg"
+        },
+        {
+            "image": "assets/img/service/img16.jpg",
+            "image2": "assets/img/service/img16.jpg",
+            "image3": "assets/img/service/img16.jpg",
+            "image4": "assets/img/service/img16.jpg"
+        }
+    ],
+    "career": [
+        {
+            "image": "assets/img/career/img01.jpg",
+            "image2": "assets/img/career/img01.jpg",
+            "image3": "assets/img/career/img01.jpg",
+            "image4": "assets/img/career/img01.jpg"
+        },
+        {
+            "image": "assets/img/career/img02.jpg",
+            "image2": "assets/img/career/img02.jpg",
+            "image3": "assets/img/career/img02.jpg",
+            "image4": "assets/img/career/img02.jpg"
+        },
+        {
+            "image": "assets/img/career/img03.jpg",
+            "image2": "assets/img/career/img03.jpg",
+            "image3": "assets/img/career/img03.jpg",
+            "image4": "assets/img/career/img03.jpg"
+        },
+        {
+            "image": "assets/img/career/img04.jpg",
+            "image2": "assets/img/career/img04.jpg",
+            "image3": "assets/img/career/img04.jpg",
+            "image4": "assets/img/career/img04.jpg"
+        },
+        {
+            "image": "assets/img/career/img05.jpg",
+            "image2": "assets/img/career/img05.jpg",
+            "image3": "assets/img/career/img05.jpg",
+            "image4": "assets/img/career/img05.jpg"
+        }
+    ],
+    "team": [
+        {
+            "name": "Ethan Reynolds",
+            "designation": "AI Engineer",
+            "image": "assets/img/team/img01.jpg"
+        },
+        {
+            "name": "Priya Ramirez",
+            "designation": "Data Scientist",
+            "image": "assets/img/team/img02.jpg"
+        },
+        {
+            "name": "Aiden Brooks",
+            "designation": "AI Researcher",
+            "image": "assets/img/team/img03.jpg"
+        },
+        {
+            "name": "Grayson Cole",
+            "designation": "AI Solutions Architect",
+            "image": "assets/img/team/img04.jpg"
+        },
+        {
+            "name": "Eliana Rose",
+            "designation": "Intelligence Analyst",
+            "image": "assets/img/team/img05.jpg"
+        },
+        {
+            "name": "Carter Vaughn",
+            "designation": "AI Project Manager",
+            "image": "assets/img/team/img06.jpg"
+        },
+        {
+            "name": "Logan Pierce",
+            "designation": "AI Solutions Architect",
+            "image": "assets/img/team/img07.jpg"
+        },
+        {
+            "name": "Emerson Tate",
+            "designation": "AI Product Manager",
+            "image": "assets/img/team/img08.jpg"
+        }
+    ],
+    "professionals": [
+        {
+            "name": "Ethan Reynolds",
+            "designation": "AI Engineer",
+            "image": "assets/img/team/img01.jpg",
+            "bg_image": "assets/img/team/noice-bg.png",
+            "social_icon": "fa-brands fa-linkedin-in"
+        },
+        {
+            "name": "Priya Ramirez",
+            "designation": "Data Scientist",
+            "image": "assets/img/team/img02.jpg",
+            "bg_image": "assets/img/team/noice-bg.png",
+            "social_icon": "fa-brands fa-linkedin-in"
+        },
+        {
+            "name": "Aiden Brooks",
+            "designation": "AI Researcher",
+            "image": "assets/img/team/img03.jpg",
+            "bg_image": "assets/img/team/noice-bg.png",
+            "social_icon": "fa-brands fa-linkedin-in"
+        },
+        {
+            "name": "Grayson Cole",
+            "designation": "AI Solutions Architect",
+            "image": "assets/img/team/img04.jpg",
+            "bg_image": "assets/img/team/noice-bg.png",
+            "social_icon": "fa-brands fa-linkedin-in"
+        },
+        {
+            "name": "Eliana Rose",
+            "designation": "Intelligence Analyst",
+            "image": "assets/img/team/img05.jpg",
+            "bg_image": "assets/img/team/noice-bg.png",
+            "social_icon": "fa-brands fa-linkedin-in"
+        },
+        {
+            "name": "Carter Vaughn",
+            "designation": "AI Project Manager",
+            "image": "assets/img/team/img06.jpg",
+            "bg_image": "assets/img/team/noice-bg.png",
+            "social_icon": "fa-brands fa-linkedin-in"
+        },
+        {
+            "name": "Logan Pierce",
+            "designation": "AI Solutions Architect",
+            "image": "assets/img/team/img07.jpg",
+            "bg_image": "assets/img/team/noice-bg.png",
+            "social_icon": "fa-brands fa-linkedin-in"
+        },
+        {
+            "name": "Emerson Tate",
+            "designation": "AI Product Manager",
+            "image": "assets/img/team/img08.jpg",
+            "bg_image": "assets/img/team/noice-bg.png",
+            "social_icon": "fa-brands fa-linkedin-in"
+        }
+    ],
+    "contact": [
+        {
+            "name": "San Francisco, USA",
+            "number": "+(1) 561 555 7689",
+            "email": "aivora@usadomain.com",
+            "image": "assets/img/contact/img01.png",
+            "image2": "assets/img/contact/img01.png",
+            "image3": "assets/img/contact/img01.png",
+            "image4": "assets/img/contact/img01.png"
+        },
+        {
+            "name": "London, United Kingdom",
+            "number": "+1 (416) 123-4567",
+            "email": "aivora@usadomain.com",
+            "image": "assets/img/contact/img02.png",
+            "image2": "assets/img/contact/img02.png",
+            "image3": "assets/img/contact/img02.png",
+            "image4": "assets/img/contact/img02.png"
+        },
+        {
+            "name": "Toronto, Canada",
+            "number": "+1 (416) 123-4567",
+            "email": "aivora@usadomain.com",
+            "image": "assets/img/contact/img03.png",
+            "image2": "assets/img/contact/img03.png",
+            "image3": "assets/img/contact/img03.png",
+            "image4": "assets/img/contact/img03.png"
+        }
+    ],
+    "who_we_are": [
+        {
+            "image": "assets/img/about/img01.jpg",
+            "image2": "assets/img/about/img01.jpg",
+            "image3": "assets/img/about/img01.jpg",
+            "image4": "assets/img/about/img01.jpg"
+        },
+        {
+            "image": "assets/img/about/img02.jpg",
+            "image2": "assets/img/about/img02.jpg",
+            "image3": "assets/img/about/img02.jpg",
+            "image4": "assets/img/about/img02.jpg"
+        },
+        {
+            "image": "assets/img/about/img03.jpg",
+            "image2": "assets/img/about/img03.jpg",
+            "image3": "assets/img/about/img03.jpg",
+            "image4": "assets/img/about/img03.jpg"
+        },
+        {
+            "image": "assets/img/about/img04.jpg",
+            "image2": "assets/img/about/img04.jpg",
+            "image3": "assets/img/about/img04.jpg",
+            "image4": "assets/img/about/img04.jpg"
+        }
+    ],
+    "Industries_Served": [
+        {
+            "title": "Education",
+            "icon": "assets/img/icon/service-icon01.svg"
+        },
+        {
+            "title": "Logistics",
+            "icon": "assets/img/icon/service-icon02.svg"
+        },
+        {
+            "title": "Marketing",
+            "icon": "assets/img/icon/service-icon03.svg"
+        },
+        {
+            "title": "Healthcare",
+            "icon": "assets/img/icon/service-icon04.svg"
+        },
+        {
+            "title": "Finance",
+            "icon": "assets/img/icon/service-icon05.svg"
+        },
+        {
+            "title": "Manufacturing",
+            "icon": "assets/img/icon/service-icon06.svg"
+        },
+        {
+            "title": "E-commerce",
+            "icon": "assets/img/icon/service-icon07.svg"
+        }
+    ],
+    "Our_Testimonial": [
+        {
+            "rating_icon": "fa-solid fa-star-sharp",
+            "rating_source": "GoodFirms",
+            "rating_value": "5.0",
+            "content": "We saw a big boost in engagement and sales with their recommendation engine. It personalizes the shopping experience perfectly.",
+            "avatar": "assets/img/avatar/img01.jpg",
+            "name": "Riya Mehta",
+            "designation": "Manager - Trendico"
+        },
+        {
+            "rating_icon": "fa-solid fa-star-sharp",
+            "rating_source": "Clutch",
+            "rating_value": "4.9",
+            "content": "Their NLP tool saves us hours by extracting key info from large documents instantly. It's fast, accurate, and a huge time-saver.",
+            "avatar": "assets/img/avatar/img02.jpg",
+            "name": "Miguel Torres",
+            "designation": "CEO & Funder - DocFlow"
+        },
+        {
+            "rating_icon": "fa-solid fa-star-sharp",
+            "rating_source": "Clutch",
+            "rating_value": "5.0",
+            "content": "Their automation solutions saved us countless hours. Tasks that took days are now completed in minutes. The ROI was almost immediate.",
+            "avatar": "assets/img/avatar/img03.jpg",
+            "name": "Sebastian Clark",
+            "designation": "Manager - SwiftLogix"
+        },
+        {
+            "rating_icon": "fa-solid fa-star-sharp",
+            "rating_source": "GoodFirms",
+            "rating_value": "5.0",
+            "content": "The AI chatbot they developed has transformed our customer service. We now handle 70% of queries with higher customer satisfaction!",
+            "avatar": "assets/img/avatar/img04.jpg",
+            "name": "Priya Ramirez",
+            "designation": "CEO - BrightNest"
+        },
+        {
+            "rating_icon": "fa-solid fa-star-sharp",
+            "rating_source": "Clutch",
+            "rating_value": "4.7",
+            "content": "We gained deep insights into customer behavior and performance. Their analytics made our decision-making sharper and more confident.",
+            "avatar": "assets/img/avatar/img05.jpg",
+            "name": "Sebastian Clark",
+            "designation": "Director - Finexa Capital"
+        },
+        {
+            "rating_icon": "fa-solid fa-star-sharp",
+            "rating_source": "Clutch",
+            "rating_value": "5.0",
+            "content": "Their automation solutions saved us countless hours. Tasks that took days are now completed in minutes. The ROI was almost immediate.",
+            "avatar": "assets/img/avatar/img03.jpg",
+            "name": "Sebastian Clark",
+            "designation": "Manager - SwiftLogix"
+        }
+    ],
+    "brand": [
+        {
+            "image": "assets/img/brand/logo01.png"
+        },
+        {
+            "image": "assets/img/brand/logo02.png"
+        },
+        {
+            "image": "assets/img/brand/logo03.png"
+        },
+        {
+            "image": "assets/img/brand/logo04.png"
+        },
+        {
+            "image": "assets/img/brand/logo05.png"
+        },
+        {
+            "image": "assets/img/brand/logo06.png"
+        },
+        {
+            "image": "assets/img/brand/logo07.png"
+        },
+        {
+            "image": "assets/img/brand/logo08.png"
+        },
+        {
+            "image": "assets/img/brand/logo09.png"
+        },
+        {
+            "image": "assets/img/brand/logo10.png"
+        },
+        {
+            "image": "assets/img/brand/logo11.png"
+        }
+    ],
+    "ac_testimonial": [
+        {
+            "avatar": "assets/img/avatar/author_01.png",
+            "content": "Aivora now automates over 70% of our customer queries, saving hours of manual work daily. It’s improved both our response time and overall customer satisfaction.",
+            "name": "Priya Ramirez",
+            "designation": "Manager - SwiftLogix",
+            "quote_image": "assets/img/testimonial/quote.png"
+        },
+        {
+            "avatar": "assets/img/avatar/author_02.png",
+            "content": "We launched Aivora in just minutes, and the impact was immediate. Our support costs dropped by 50%, and customers receive answers instantly, 24/7.",
+            "name": "Sebastian Clark",
+            "designation": "CEO & Funder - DocFlow",
+            "quote_image": "assets/img/testimonial/quote.png"
+        },
+        {
+            "avatar": "assets/img/avatar/author_03.png",
+            "content": "Aivora’s powerful analytics give us deep insights into customer needs. We’ve optimized our chatbot flows and seen noticeable growth in conversions.",
+            "name": "Miguel Torres",
+            "designation": "Director - Finexa Capital",
+            "quote_image": "assets/img/testimonial/quote.png"
+        },
+        {
+            "avatar": "assets/img/avatar/author_01.png",
+            "content": "Aivora now automates over 70% of our customer queries, saving hours of manual work daily. It’s improved both our response time and overall customer satisfaction.",
+            "name": "Priya Ramirez",
+            "designation": "Manager - SwiftLogix",
+            "quote_image": "assets/img/testimonial/quote.png"
+        },
+        {
+            "avatar": "assets/img/avatar/author_03.png",
+            "content": "Aivora’s powerful analytics give us deep insights into customer needs. We’ve optimized our chatbot flows and seen noticeable growth in conversions.",
+            "name": "Miguel Torres",
+            "designation": "Director - Finexa Capital",
+            "quote_image": "assets/img/testimonial/quote.png"
+        }
+    ]
+}
