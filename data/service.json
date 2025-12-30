@@ -256,6 +256,23 @@
             "image4": "assets/img/about/img04.jpg"
         }
     ],
+    "about_features": [
+        {
+            "icon": "assets/img/icon/feature-icon01.svg",
+            "title": "Smarter insights",
+            "content": "Make faster, data-driven decisions powered by real-time AI analysis and prediction."
+        },
+        {
+            "icon": "assets/img/icon/feature-icon02.svg",
+            "title": "Integrated AI solutions",
+            "content": "No extra tools or plugins needed. Get built-in, scalable AI from day one."
+        },
+        {
+            "icon": "assets/img/icon/feature-icon03.svg",
+            "title": "End-to-end automation",
+            "content": "Eliminate bottlenecks with intelligent workflows that never leave you guessing."
+        }
+    ],
     "Industries_Served": [
         {
             "title": "Education",
@@ -412,6 +429,85 @@
             "name": "Miguel Torres",
             "designation": "Director - Finexa Capital",
             "quote_image": "assets/img/testimonial/quote.png"
+        }
+    ]
+    ,
+    "hiring_process": [
+        {
+            "title": "Send your CV",
+            "content": "Apply for a position by sending us your CV or providing a link to your LinkedIn profile, and take the first step toward joining our team."
+        },
+        {
+            "title": "Initial screening",
+            "content": "We perform an initial screening to review your experience and fit for the role."
+        },
+        {
+            "title": "Job interview",
+            "content": "Selected candidates are invited to interviews with the hiring team to assess skills and alignment."
+        },
+        {
+            "title": "Test task",
+            "content": "For some roles, we provide a short take-home test or practical task to evaluate hands-on skills."
+        },
+        {
+            "title": "You're hired!",
+            "content": "Successful candidates receive an offer and onboarding details to get started with our team."
+        }
+    ],
+    "faqs": [
+        {
+            "question": "What services do you offer?",
+            "answer": "We provide AI product development, data & analytics, AI for e-commerce, AI consulting, chatbots, and AI-driven marketing solutions.",
+            "bullets": [
+                "Instant Setup – Add your URL, and the chatbot trains itself.",
+                "Self-Learning – Learns from real customer questions.",
+                "Smarter with Data – More data means better answers."
+            ]
+        },
+        {
+            "question": "How long does a typical project take?",
+            "answer": "Project timelines vary by scope; small pilots often take 4–8 weeks and full product builds typically range from 3–6 months.",
+            "bullets": [
+                "Pilot Projects – Small pilots typically 4–8 weeks.",
+                "Full Builds – Product builds often 3–6 months.",
+                "Iterative Delivery – We release in phases to show value early."
+            ]
+        },
+        {
+            "question": "How do you handle data privacy and security?",
+            "answer": "We follow best practices including encryption in transit and at rest, access controls, and can support on-premise or private-cloud deployments per client requirements.",
+            "bullets": [
+                "Encryption – Data encrypted in transit and at rest.",
+                "Access Controls – Role-based access and audit logging.",
+                "Deployment Options – Cloud, private-cloud, or on-premise."
+            ]
+        },
+        {
+            "question": "Do you provide post-launch support and maintenance?",
+            "answer": "Yes — we offer ongoing support, monitoring, and iterative improvements through managed services or retainer agreements.",
+            "bullets": [
+                "Monitoring – Proactive monitoring and alerts.",
+                "Improvements – Regular model and flow updates.",
+                "Support Plans – Flexible SLAs and retainer options."
+            ]
+        },
+        {
+            "question": "Can your solutions integrate with existing systems?",
+            "answer": "Absolutely — we build APIs and connectors to integrate with CRMs, e-commerce platforms, databases, and other enterprise systems.",
+            "bullets": [
+                "APIs – REST APIs and webhooks for easy integration.",
+                "Connectors – Ready connectors for CRMs and e-commerce.",
+                "Custom Integration – We build custom adapters as needed."
+            ]
+        },
+        {
+            "question": "How do you price your projects?",
+            "answer": "Pricing depends on scope, complexity, and delivery model; we offer fixed-price, time-and-materials, and outcome-based engagements.",
+            "bullets": [
+                "Flexible Models – Fixed-price, T&M, and outcome-based.",
+                "Estimates – We provide detailed proposals and milestones.",
+                "Transparent Billing – Clear scope and invoicing."
+            ]
         }
     ]
 }

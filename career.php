@@ -109,72 +109,30 @@
                                 <h2 class="title title-line_height">Our hiring process</h2>
                             </div>
                             <div class="xb-faq career-faq">
+                                <?php
+                                $hiring = isset($data['hiring_process']) && is_array($data['hiring_process']) ? $data['hiring_process'] : [];
+                                ?>
+
                                 <ul class="accordion_box clearfix list-unstyled">
-                                    <li class="accordion block active-block">
-                                        <div class="acc-btn active">
-                                            <span class="number">01</span> _Send your CV
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body current">
-                                            <div class="content">
-                                                <p>Apply for a position by sending us your CV or providing a link to
-                                                    your LinkedIn profile, and take the first step toward joining our
-                                                    team.</p>
+                                    <?php foreach ($hiring as $index => $step):
+                                        $num = sprintf('%02d', $index + 1);
+                                        $isFirst = $index === 0;
+                                        $liClass = $isFirst ? 'accordion block active-block' : 'accordion block';
+                                        $btnClass = $isFirst ? 'acc-btn active' : 'acc-btn';
+                                        $bodyClass = $isFirst ? 'acc_body current' : 'acc_body';
+                                    ?>
+                                        <li class="<?php echo $liClass; ?>">
+                                            <div class="<?php echo $btnClass; ?>">
+                                                <span class="number"><?php echo $num; ?></span> _<?php echo htmlspecialchars($step['title']); ?>
+                                                <span class="arrow"><span></span></span>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="accordion block">
-                                        <div class="acc-btn">
-                                            <span class="number">02</span> _Initial screening
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body">
-                                            <div class="content">
-                                                <p>Apply for a position by sending us your CV or providing a link to
-                                                    your LinkedIn profile, and take the first step toward joining our
-                                                    team.</p>
+                                            <div class="<?php echo $bodyClass; ?>">
+                                                <div class="content">
+                                                    <p><?php echo htmlspecialchars($step['content']); ?></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="accordion block">
-                                        <div class="acc-btn">
-                                            <span class="number">03</span> _Job interview
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body">
-                                            <div class="content">
-                                                <p>Apply for a position by sending us your CV or providing a link to
-                                                    your LinkedIn profile, and take the first step toward joining our
-                                                    team.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="accordion block">
-                                        <div class="acc-btn">
-                                            <span class="number">04</span> _Test task
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body">
-                                            <div class="content">
-                                                <p>Apply for a position by sending us your CV or providing a link to
-                                                    your LinkedIn profile, and take the first step toward joining our
-                                                    team.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="accordion block">
-                                        <div class="acc-btn">
-                                            <span class="number">05</span> _You’re hired!
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body">
-                                            <div class="content">
-                                                <p>Apply for a position by sending us your CV or providing a link to
-                                                    your LinkedIn profile, and take the first step toward joining our
-                                                    team.</p>
-                                            </div>
-                                        </div>
-                                    </li>
+                                        </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                         </div>

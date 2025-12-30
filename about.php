@@ -80,46 +80,25 @@
                             solutions tailored to your needs. Our technology optimizes operations, enhances
                             decision-making, and uncovers new opportunities for growth.</p>
                     </div>
+                    <?php
+                    $data = json_decode(file_get_contents("data/service.json"), true);
+                    $aboutFeatures = isset($data['about_features']) ? $data['about_features'] : [];
+                    ?>
+
                     <div class="row mt-40">
-                        <div class="col-lg-4 col-md-6 mt-30">
-                            <div class="xb-feature-item">
-                                <div class="xb-item--inner xb-border">
-                                    <span class="xb-item--icon"><img src="assets/img/icon/feature-icon01.svg"
-                                            alt="icon"></span>
-                                    <div class="xb-item--holder">
-                                        <h2 class="xb-item--title">Smarter insights</h2>
-                                        <p class="xb-item--content">Make faster, data-driven decisions powered by
-                                            real-time AI analysis and prediction.</p>
+                        <?php foreach ($aboutFeatures as $feature): ?>
+                            <div class="col-lg-4 col-md-6 mt-30">
+                                <div class="xb-feature-item">
+                                    <div class="xb-item--inner xb-border">
+                                        <span class="xb-item--icon"><img src="<?php echo $feature['icon']; ?>" alt="icon"></span>
+                                        <div class="xb-item--holder">
+                                            <h2 class="xb-item--title"><?php echo htmlspecialchars($feature['title']); ?></h2>
+                                            <p class="xb-item--content"><?php echo htmlspecialchars($feature['content']); ?></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-30">
-                            <div class="xb-feature-item">
-                                <div class="xb-item--inner xb-border">
-                                    <span class="xb-item--icon"><img src="assets/img/icon/feature-icon02.svg"
-                                            alt="icon"></span>
-                                    <div class="xb-item--holder">
-                                        <h2 class="xb-item--title">Integrated AI solutions</h2>
-                                        <p class="xb-item--content">No extra tools or plugins needed. Get built-in,
-                                            scalable AI from day one.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-30">
-                            <div class="xb-feature-item">
-                                <div class="xb-item--inner xb-border">
-                                    <span class="xb-item--icon"><img src="assets/img/icon/feature-icon03.svg"
-                                            alt="icon"></span>
-                                    <div class="xb-item--holder">
-                                        <h2 class="xb-item--title">End-to-end automation</h2>
-                                        <p class="xb-item--content">Eliminate bottlenecks with intelligent workflows
-                                            that never leave you guessing.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
                 <div class="about-bg">
@@ -138,40 +117,21 @@
                     </div>
                 </div>
                 <div class="brand-marquee ac-brand-marquee marquee-left">
+                    <?php
+                    $brandData = [];
+                    if (!isset($data)) {
+                        $data = json_decode(file_get_contents("data/service.json"), true);
+                    }
+                    if (isset($data['brand']) && is_array($data['brand'])) {
+                        $brandData = $data['brand'];
+                    }
+                    ?>
                     <div class="ac-brand-inner ul_li_between">
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo01.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo02.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo03.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo04.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo05.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo06.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo07.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo08.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo09.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo10.png" alt="logo">
-                        </div>
-                        <div class="xb-brand-item">
-                            <img src="assets/img/brand/logo11.png" alt="logo">
-                        </div>
+                        <?php foreach ($brandData as $brand): ?>
+                            <div class="xb-brand-item">
+                                <img src="<?php echo htmlspecialchars($brand['image']); ?>" alt="logo">
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </section>

@@ -2,7 +2,7 @@
 
 <body class="ai-agency">
 
-    <?php require_once 'layouts/setting3.php'; ?>
+    <?php require_once 'layouts/setting.php'; ?>
 
     <div class="body_wrap o-clip">
 
@@ -1318,146 +1318,38 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="xb-faq wow fadeInUp" data-wow-duration="600ms">
+                                <?php
+                                $data = json_decode(file_get_contents("data/service.json"), true);
+                                $faqs = isset($data['faqs']) ? $data['faqs'] : [];
+                                ?>
+
                                 <ul class="accordion_box clearfix list-unstyled">
-                                    <li class="accordion block active-block">
-                                        <div class="acc-btn active">
-                                            <span class="number">01</span>_ Do I need a lot of data to train the Al
-                                            chatbot?
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body current">
-                                            <div class="content">
-                                                <p>You don’t need much to start. Just provide your website URL, and our
-                                                    tool will automatically scrape and train your AI chatbot. Even with
-                                                    limited data, you can collect customer questions and keep improving
-                                                    the bot. The more data you provide, the smarter and more effective
-                                                    it becomes.
-                                                </p>
-                                                <ul class="list-unstyled">
-                                                    <li><i class="far fa-check"></i>Instant Setup – Add your URL, and
-                                                        the chatbot trains itself.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Self-Learning – Learns from real
-                                                        customer questions.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Smarter with Data – More data means
-                                                        better answers.
-                                                    </li>
-                                                </ul>
+                                    <?php foreach ($faqs as $index => $faq):
+                                        $num = sprintf('%02d', $index + 1);
+                                        $isFirst = $index === 0;
+                                        $liClass = $isFirst ? ' accordion block active-block' : ' accordion block';
+                                        $btnClass = $isFirst ? 'acc-btn active' : 'acc-btn';
+                                        $bodyClass = $isFirst ? 'acc_body current' : 'acc_body';
+                                    ?>
+                                        <li class="<?php echo trim($liClass); ?>">
+                                            <div class="<?php echo $btnClass; ?>">
+                                                <span class="number"><?php echo $num; ?></span>_ <?php echo htmlspecialchars($faq['question']); ?>
+                                                <span class="arrow"><span></span></span>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="accordion block">
-                                        <div class="acc-btn">
-                                            <span class="number">02</span>_ How long does it take to train the chatbot?
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body">
-                                            <div class="content">
-                                                <p>You don’t need much to start. Just provide your website URL, and our
-                                                    tool will automatically scrape and train your AI chatbot. Even with
-                                                    limited data, you can collect customer questions and keep improving
-                                                    the bot. The more data you provide, the smarter and more effective
-                                                    it becomes.
-                                                </p>
-                                                <ul class="list-unstyled">
-                                                    <li><i class="far fa-check"></i>Instant Setup – Add your URL, and
-                                                        the chatbot trains itself.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Self-Learning – Learns from real
-                                                        customer questions.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Smarter with Data – More data means
-                                                        better answers.
-                                                    </li>
-                                                </ul>
+                                            <div class="<?php echo $bodyClass; ?>">
+                                                <div class="content">
+                                                    <p><?php echo nl2br(htmlspecialchars($faq['answer'])); ?></p>
+                                                    <?php if (!empty($faq['bullets']) && is_array($faq['bullets'])): ?>
+                                                        <ul class="list-unstyled">
+                                                            <?php foreach ($faq['bullets'] as $b): ?>
+                                                                <li><i class="far fa-check"></i> <?php echo htmlspecialchars($b); ?></li>
+                                                            <?php endforeach; ?>
+                                                        </ul>
+                                                    <?php endif; ?>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="accordion block">
-                                        <div class="acc-btn">
-                                            <span class="number">03</span>_ How can I embed the Al assistant on my
-                                            website?
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body">
-                                            <div class="content">
-                                                <p>You don’t need much to start. Just provide your website URL, and our
-                                                    tool will automatically scrape and train your AI chatbot. Even with
-                                                    limited data, you can collect customer questions and keep improving
-                                                    the bot. The more data you provide, the smarter and more effective
-                                                    it becomes.
-                                                </p>
-                                                <ul class="list-unstyled">
-                                                    <li><i class="far fa-check"></i>Instant Setup – Add your URL, and
-                                                        the chatbot trains itself.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Self-Learning – Learns from real
-                                                        customer questions.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Smarter with Data – More data means
-                                                        better answers.
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="accordion block">
-                                        <div class="acc-btn">
-                                            <span class="number">04</span>_ Does it support other languages than
-                                            english?
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body">
-                                            <div class="content">
-                                                <p>You don’t need much to start. Just provide your website URL, and our
-                                                    tool will automatically scrape and train your AI chatbot. Even with
-                                                    limited data, you can collect customer questions and keep improving
-                                                    the bot. The more data you provide, the smarter and more effective
-                                                    it becomes.
-                                                </p>
-                                                <ul class="list-unstyled">
-                                                    <li><i class="far fa-check"></i>Instant Setup – Add your URL, and
-                                                        the chatbot trains itself.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Self-Learning – Learns from real
-                                                        customer questions.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Smarter with Data – More data means
-                                                        better answers.
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="accordion block">
-                                        <div class="acc-btn">
-                                            <span class="number">05</span>_ Can I take control of a conversation if
-                                            needed?
-                                            <span class="arrow"><span></span></span>
-                                        </div>
-                                        <div class="acc_body">
-                                            <div class="content">
-                                                <p>You don’t need much to start. Just provide your website URL, and our
-                                                    tool will automatically scrape and train your AI chatbot. Even with
-                                                    limited data, you can collect customer questions and keep improving
-                                                    the bot. The more data you provide, the smarter and more effective
-                                                    it becomes.
-                                                </p>
-                                                <ul class="list-unstyled">
-                                                    <li><i class="far fa-check"></i>Instant Setup – Add your URL, and
-                                                        the chatbot trains itself.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Self-Learning – Learns from real
-                                                        customer questions.
-                                                    </li>
-                                                    <li><i class="far fa-check"></i>Smarter with Data – More data means
-                                                        better answers.
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
+                                        </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                         </div>

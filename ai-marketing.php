@@ -3,7 +3,7 @@
 
 <body class="ai-marketing">
 
-    <?php require_once('layouts/setting2.php'); ?>
+    <?php require_once('layouts/setting.php'); ?>
 
     <div class="body_wrap o-clip">
 
@@ -834,8 +834,9 @@
     </div>
 
     <!-- jquery include -->
+    <script src="assets/js/SplitText.js"></script>
 
-    <?php require_once('layouts/script2.php'); ?>
+    <?php require_once('layouts/script.php'); ?>
 
 </body>
 
